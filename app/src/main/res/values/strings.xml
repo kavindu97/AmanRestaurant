@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Covid 19</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="e_mail">E - mail:</string>
+    <string name="mobile">Mobile:</string>
+    <string name="pussword">Pussword:</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="user_name">User Name :</string>
+</resources>
