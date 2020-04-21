@@ -25,4 +25,5 @@
     <string name="photo">Photo</string>
     <string name="add_pramotion">Add Pramotion</string>
     <string name="pick_a_photo">Pick a photo</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
