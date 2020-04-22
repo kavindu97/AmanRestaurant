@@ -21,7 +21,7 @@
         android:text="CUStomer" />
 
     <Button
-        android:id="@+id/admin_pb"
+        android:id="@+id/admin_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Admin" />

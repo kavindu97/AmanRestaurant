@@ -8,7 +8,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mad_kavindu.R;
-import com.example.mad_kavindu.adapters.CustomerListAdapter;
 
 public class HomeScreen extends AppCompatActivity {
     Button btn1;
@@ -16,11 +15,11 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
-        btn1 =findViewById(R.id.admin_pb);
+        btn1 =findViewById(R.id.admin_home);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),admin_panel.class);
+                Intent i = new Intent(getApplicationContext(),adminHome_pg.class);
                 startActivity(i);
             }
         });
