@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--this will be the item in list-->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="165dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food2" />
+
+
+    <TextView
+        android:id="@+id/adminlist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:gravity="right"
+        android:text="Name"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/adminlist_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminlist_name"
+        android:layout_alignParentRight="true"
+        android:text="PKR 53434"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/adminlist_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminlist_price"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:text="Buy one and eat one LOL"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/adminlist_button_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EDIT" />
+
+
+        <Button
+            android:id="@+id/adminlist_button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DELETE" />
+    </LinearLayout>
+</RelativeLayout>
