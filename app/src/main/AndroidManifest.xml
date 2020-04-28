@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.adminHome_pg"></activity>
+        <activity android:name=".activities.Login"></activity>
+        <activity android:name=".activities.adminHome_pg" />
         <activity android:name=".activities.admin_update_it" />
         <activity android:name=".activities.HomeScreen">
             <intent-filter>
@@ -22,6 +23,8 @@
         <activity android:name=".activities.Admin_PramotionList" />
         <activity android:name=".activities.Admin_EditPramotionItem" />
         <activity android:name=".activities.Customer_PramotionList" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.CardActivity" />
     </application>
 
 </manifest>

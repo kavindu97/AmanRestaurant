@@ -25,4 +25,20 @@
     <string name="photo">Photo</string>
     <string name="add_pramotion">Add Pramotion</string>
     <string name="pick_a_photo">Pick a photo</string>
+
+
+    <array name="cards">
+        <item>MasterCard</item>
+        <item>American Express</item>
+        <item>Visa</item>
+        <item>Chase</item>
+        <item>HSBC Gold</item>
+    </array>
+
+
 </resources>
+
+
+
+
+
