@@ -1,0 +1,2 @@
+rootProject.name='Login_Registration_CustomerOrder_IT18399066_AMAN'
+include ':app'

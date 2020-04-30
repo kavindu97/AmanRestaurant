@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/cartImage"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/cartImage"
+        android:layout_marginTop="20dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="FOOD NAME"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/cartImage"
+        android:layout_marginTop="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="Quantity"/>
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/cartImage"
+        android:layout_marginTop="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="PRICE"/>
+
+</RelativeLayout>

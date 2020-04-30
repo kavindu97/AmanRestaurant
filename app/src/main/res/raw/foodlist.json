@@ -1,0 +1,40 @@
+{
+  "foods": [
+  {
+    "foodName": "Chicken Burger",
+    "description": "Supiri burger"
+    "imageURL": "",
+    "price": 41.29,
+    "userRating": 5
+  },
+  {
+     "foodName": "Chicken Burger",
+     "description": "Supiri burger"
+     "imageURL": "",
+     "price": 41.29,
+     "userRating": 5
+  },
+   {
+      "foodName": "Chicken Burger",
+      "description": "Supiri burger"
+      "imageURL": "",
+      "price": 41.29,
+      "userRating": 5
+  },
+  {
+      "foodName": "Chicken Burger",
+      "description": "Supiri burger"
+      "imageURL": "",
+      "price": 41.29,
+      "userRating": 5
+  },
+  {
+      "foodName": "Chicken Burger",
+      "description": "Supiri burger"
+      "imageURL": "",
+      "price": 41.29,
+      "userRating": 5
+  }
+
+  ]
+}
