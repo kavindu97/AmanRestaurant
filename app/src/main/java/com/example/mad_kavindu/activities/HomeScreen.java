@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mad_kavindu.CustomerActivity;
 import com.example.mad_kavindu.R;
 
 public class HomeScreen extends AppCompatActivity {
@@ -35,7 +36,7 @@ public class HomeScreen extends AppCompatActivity {
     }
 
     public void cutomerClick(View v) {
-        Intent i=new Intent(this, Customer_PramotionList.class);
+        Intent i=new Intent(this, CustomerActivity.class);
         startActivity(i);
     }
 

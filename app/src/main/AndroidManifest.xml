@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.Login"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".CustomerActivity" />
+        <activity android:name=".activities.Login" />
         <activity android:name=".activities.adminHome_pg" />
         <activity android:name=".activities.admin_update_it" />
         <activity android:name=".activities.HomeScreen">
@@ -25,6 +28,11 @@
         <activity android:name=".activities.Customer_PramotionList" />
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.CardActivity" />
+
+        <provider
+            android:name=".data.FoodProvider"
+            android:authorities="com.example.mad_kavindu"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
