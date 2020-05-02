@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/untitled_1"
     tools:context=".activities.admin_update_it">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/burger"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/burger" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="148dp"
-            android:layout_height="164dp"
-            android:layout_marginTop="40dp"
-            app:layout_constraintStart_toStartOf="@+id/textView9"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@color/colorAccent" />
-
-        <TextView
-            android:id="@+id/textViewName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="44dp"
-            android:text="@string/chicken_bacon"
-            android:textSize="24sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/chicken_bacon"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
@@ -37,7 +39,9 @@
         android:layout_marginLeft="44dp"
         android:layout_marginTop="28dp"
         android:text="New Name"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -47,7 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="New Price"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -57,105 +63,86 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="New Details"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:text="@string/change_photo"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@+id/textView11"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/change_photo"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-        <TextView
-            android:id="@+id/textView8Price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="92dp"
-            android:text="@string/rs2500"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView8Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/rs2500"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView5Details"
-            android:layout_width="157dp"
-            android:layout_height="67dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/get_2_large_pizzas_for_rs2500_save_over_rs1200"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/textView8Price" />
+    <TextView
+        android:id="@+id/textView5Details"
+        android:layout_width="157dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/get_2_large_pizzas_for_rs2500_save_over_rs1200"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView8Price" />
 
-        <EditText
-            android:id="@+id/editText5Name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="92dp"
-            android:ems="10"
-            android:hint="Enter new name"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="@+id/textView9"
-            app:layout_constraintStart_toEndOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/textView5Details"
-            app:layout_constraintVertical_bias="1.0" />
+    <EditText
+        android:id="@+id/editText5Name"
+        android:layout_width="175dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Enter new name"
+        android:inputType="textPersonName"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView5Details"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <EditText
-            android:id="@+id/editText6Price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="32dp"
-            android:ems="10"
-            android:hint="Enter new price"
-            android:inputType="number"
-            app:layout_constraintBottom_toBottomOf="@+id/textView10"
-            app:layout_constraintEnd_toEndOf="@+id/editText5Name"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView10"
-            app:layout_constraintTop_toBottomOf="@+id/editText5Name"
-            app:layout_constraintVertical_bias="1.0" />
+    <EditText
+        android:id="@+id/editText6Price"
+        android:layout_width="171dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter new price"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/editText5Name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/editText5Name"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <EditText
-            android:id="@+id/editText7Details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="68dp"
-            android:layout_marginLeft="68dp"
-            android:layout_marginTop="44dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:hint="Enter new details"
-            android:inputType="textMultiLine"
-            app:layout_constraintBottom_toBottomOf="@+id/textView11"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
-            app:layout_constraintTop_toBottomOf="@+id/editText6Price"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <EditText
-            android:id="@+id/editTextPhotoUrl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="36dp"
-            android:hint="Enter new photo url"
-            app:layout_constraintBottom_toBottomOf="@+id/textView12"
-            app:layout_constraintStart_toEndOf="@+id/textView12"
-            app:layout_constraintTop_toBottomOf="@+id/editText7Details" />
-
-        <!--<Button
+    <!--<Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,18 +154,46 @@
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/editText7Details" />-->
 
-        <Button
-            android:id="@+id/button4Update"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="@string/update"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhotoUrl" />
+    <EditText
+        android:id="@+id/editText7Details"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter new details"
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/editText6Price"
+        app:layout_constraintVertical_bias="1.0" />
 
+    <EditText
+        android:id="@+id/editTextPhotoUrl"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:hint="Enter new photo url"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/editText7Details"
+        app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/button4Update"
+        android:layout_width="77dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhotoUrl" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
