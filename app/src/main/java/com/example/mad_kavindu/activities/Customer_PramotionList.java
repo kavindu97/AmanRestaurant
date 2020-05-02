@@ -4,14 +4,14 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.mad_kavindu.R;
 import com.example.mad_kavindu.adapters.CustomerListAdapter;
 import com.example.mad_kavindu.database.MyDatabaseHelper;
 import com.example.mad_kavindu.listeners.CustemerListClickListener;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class Customer_PramotionList extends AppCompatActivity implements CustemerListClickListener {
 
@@ -23,7 +23,7 @@ public class Customer_PramotionList extends AppCompatActivity implements Custeme
         RecyclerView recyclerView = findViewById(R.id.customerlist_recyclerview);
         MyDatabaseHelper myDatabaseHelper = new MyDatabaseHelper(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Cursor allRecordCursor = myDatabaseHelper.getAllRecords();
+        Cursor allRecordCursor = myDatabaseHelper.getCustomerAllRecords();
         CustomerListAdapter customerListAdapter = new CustomerListAdapter(allRecordCursor, this, this);
         recyclerView.setAdapter(customerListAdapter);
     }

@@ -7,25 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.mad_kavindu.R;
+import com.example.mad_kavindu.SharedPref;
+import com.example.mad_kavindu.adapters.SellerListAdapter;
+import com.example.mad_kavindu.database.MyDatabaseHelper;
+import com.example.mad_kavindu.listeners.AdminListClickListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mad_kavindu.R;
-import com.example.mad_kavindu.adapters.AdminListAdapter;
-import com.example.mad_kavindu.database.MyDatabaseHelper;
-import com.example.mad_kavindu.listeners.AdminListClickListener;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 public class Admin_PramotionList extends AppCompatActivity implements AdminListClickListener, View.OnClickListener {
     private static final int EDIT_REQUEST = 54;
     private static final int ADD_ITEM_REQUEST = 877;
     private MyDatabaseHelper myDatabaseHelper;
     private RecyclerView recyclerView;
-    private AdminListAdapter adminListAdapter;
+    private SellerListAdapter adminListAdapter;
     private FloatingActionButton floatingActionButton;
+    boolean deleted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +38,8 @@ public class Admin_PramotionList extends AppCompatActivity implements AdminListC
         floatingActionButton = findViewById(R.id.floatingButton);
         floatingActionButton.setOnClickListener(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Cursor allRecordsCursor = myDatabaseHelper.getAllRecords();
-        adminListAdapter = new AdminListAdapter(allRecordsCursor, this, this);
+        Cursor allRecordsCursor = myDatabaseHelper.getSellerAllRecords();
+        adminListAdapter = new SellerListAdapter(allRecordsCursor, this, this);
         recyclerView.setAdapter(adminListAdapter);
 
     }
@@ -61,7 +63,10 @@ public class Admin_PramotionList extends AppCompatActivity implements AdminListC
         }).setNegativeButton("Delete", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                boolean deleted = myDatabaseHelper.deleteRecord(rowId);
+              if ( SharedPref.getString(Admin_PramotionList.this,"id").equals("0")){
+                  deleted = myDatabaseHelper.deletesellerrecord(rowId);
+
+              }
                 if (deleted) {
                     Toast.makeText(Admin_PramotionList.this, "Record deleted", Toast.LENGTH_SHORT).show();
                     startActivity(getIntent());
@@ -85,7 +90,7 @@ public class Admin_PramotionList extends AppCompatActivity implements AdminListC
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             startActivity(getIntent());
-//            adminListAdapter.notifyDataSetChanged();
+            adminListAdapter.notifyDataSetChanged();
         }
     }
 }

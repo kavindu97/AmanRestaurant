@@ -6,16 +6,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.mad_kavindu.R;
+import com.example.mad_kavindu.SharedPref;
 import com.example.mad_kavindu.database.MyDatabaseHelper;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Admin_AddPramotionItem extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonAddPromotion;
     private EditText editTextName, editTextPrice, editTextDetails, editTextPhotoUrl;
     private MyDatabaseHelper myDatabaseHelper;
+    boolean inserted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class Admin_AddPramotionItem extends AppCompatActivity implements View.On
         buttonAddPromotion.setOnClickListener(this);
         myDatabaseHelper = new MyDatabaseHelper(this);
 
+
     }
 
     @Override
@@ -42,7 +45,10 @@ public class Admin_AddPramotionItem extends AppCompatActivity implements View.On
             Toast.makeText(this, "all fields are required", Toast.LENGTH_SHORT).show();
             return;
         }
-        boolean inserted = myDatabaseHelper.insertData(name, price, details, photoUrl);
+        if (SharedPref.getString(Admin_AddPramotionItem.this,"id").equals("0")){
+             inserted = myDatabaseHelper.insertSellerData(name, price, details, photoUrl);
+             inserted = myDatabaseHelper.insertData(name, price, details, photoUrl);
+        }
         if (inserted) {
             Toast.makeText(this, "Insertion successful", Toast.LENGTH_SHORT).show();
             editTextName.getText().clear();

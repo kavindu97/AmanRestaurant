@@ -9,10 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.mad_kavindu.R;
+import com.example.mad_kavindu.SharedPref;
 import com.example.mad_kavindu.database.MyDatabaseHelper;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Admin_EditPramotionItem extends AppCompatActivity implements View.OnClickListener {
     private String rowIDtoEdit = null;
@@ -21,6 +22,7 @@ public class Admin_EditPramotionItem extends AppCompatActivity implements View.O
     private TextView tvOldName, tvOldPrice, tvOldDetails;
     private EditText editName, editPrice, editDetails, editPhotoUrl;
     private MyDatabaseHelper myDatabaseHelper;
+    boolean updated;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +63,10 @@ public class Admin_EditPramotionItem extends AppCompatActivity implements View.O
             Toast.makeText(this, "All fields required", Toast.LENGTH_SHORT).show();
             return;
         }
-        boolean updated = myDatabaseHelper.updateRecord(rowIDtoEdit, newName, newPrice, newDetails, newPhotoUrl);
+        if ( SharedPref.getString(Admin_EditPramotionItem.this,"id").equals("0")){
+             updated = myDatabaseHelper.updatesellerRecord(rowIDtoEdit, newName, newPrice, newDetails, newPhotoUrl);
+
+        }
         if (updated) {
             Toast.makeText(this, "Updated successfully", Toast.LENGTH_SHORT).show();
             setResult(RESULT_OK);

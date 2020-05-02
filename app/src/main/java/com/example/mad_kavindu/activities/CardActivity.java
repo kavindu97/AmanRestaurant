@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.mad_kavindu.R;
 import com.example.mad_kavindu.database.MyDatabaseHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class CardActivity extends AppCompatActivity {
 
@@ -58,7 +58,7 @@ public class CardActivity extends AppCompatActivity {
 
             }while (cv.moveToNext());
             findViewById(R.id.progressBar).setVisibility(View.GONE);
-            CardAdapter adapter = new CardAdapter(this,R.layout.list_layout_cards,cardList,mDatabase);
+            CardAdapter adapter = new CardAdapter(this, R.layout.list_layout_cards,cardList,mDatabase);
             listView.setAdapter(adapter);
         }
     }

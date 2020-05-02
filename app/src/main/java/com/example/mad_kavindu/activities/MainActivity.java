@@ -8,10 +8,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.mad_kavindu.R;
 import com.example.mad_kavindu.database.MyDatabaseHelper;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.textViewViewCard:
-                    startActivity(new Intent(this,CardActivity.class));
+                    startActivity(new Intent(this, CardActivity.class));
                 break;
         }
 

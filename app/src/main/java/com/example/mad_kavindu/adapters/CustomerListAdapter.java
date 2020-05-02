@@ -11,11 +11,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.mad_kavindu.R;
 import com.example.mad_kavindu.listeners.CustemerListClickListener;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapter.CustomerViewHolder> {
     private Cursor cursor;
@@ -96,6 +96,10 @@ public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapte
                     }
                 }
             });
+
+
         }
     }
+
+
 }

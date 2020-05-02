@@ -10,7 +10,6 @@ public class Cards {
     String expDate;
     int cvv;
 
-
     public Cards(int id, String cardHolder, String cardNo, String cardT, int phoneNo, String expDate, int cvv) {
         this.id = id;
         this.cardHolder = cardHolder;

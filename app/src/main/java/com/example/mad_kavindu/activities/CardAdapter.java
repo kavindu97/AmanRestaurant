@@ -14,12 +14,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.example.mad_kavindu.R;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class CardAdapter extends ArrayAdapter<Cards>
 {
@@ -29,7 +29,7 @@ public class CardAdapter extends ArrayAdapter<Cards>
     List<Cards> cardsList;
     SQLiteDatabase mDatabase;
 
-    public CardAdapter( Context mctx, int layoutRes,List<Cards> cardsList,SQLiteDatabase mDatabase ) {
+    public CardAdapter(Context mctx, int layoutRes, List<Cards> cardsList, SQLiteDatabase mDatabase ) {
         super(mctx, layoutRes ,cardsList);
         this.mctx = mctx;
         this.layoutRes=layoutRes;
