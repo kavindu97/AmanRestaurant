@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--this will be the item in list-->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="165dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="22dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza" />
+
+
+    <TextView
+        android:id="@+id/customerlist_name"
+        android:layout_width="93dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:gravity="right"
+        android:text="Name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cutomerlist_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customerlist_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="112dp"
+        android:text="PKR 53434"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/customerlist_details"
+        android:layout_width="89dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/cutomerlist_price"
+        android:layout_alignRight="@id/imageview"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="111dp"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_toRightOf="@id/imageview"
+        android:gravity="right"
+        android:text="Buy one and eat one LOL"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerlist_details"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@id/imageview"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/customerlist_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_quantity"
+        android:orientation="horizontal">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/customerlist_order"
+                android:layout_width="94dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_buttons"
+                android:text="Order"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/customerlist_addtocart"
+                android:layout_width="94dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="230dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:text="ADD TO CART"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Aman Restaurant</string>
+    <string name="title_activity_add__pramotion">Add_Pramotion</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="chicken_bacon">Chicken Bacon</string>
+    <string name="new_name">New Name</string>
+    <string name="new_price">New Price</string>
+    <string name="rs2500">Rs2500</string>
+    <string name="get_2_large_pizzas_for_rs2500_save_over_rs1200"><![CDATA[Get 2 Large Pizzas for Rs2500 & save over Rs1200.]]></string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="plain_naan">Plain Naan</string>
+    <string name="rs550">Rs550</string>
+    <string name="rs350">Rs350</string>
+    <string name="colonel_s_stack_burger">Colonel\'s Stack Burger</string>
+    <string name="buy_one_and_get_50_off">Buy one and get 50 off</string>
+    <string name="buy_one_and_get_20_off">Buy one and get 20 off</string>
+    <string name="buy_one_and_get_one_free">Buy one and get one free</string>
+    <string name="masala_sandwich">Masala Sandwich</string>
+    <string name="update">Update</string>
+    <string name="pick_photo">Pick Photo</string>
+    <string name="name">Name</string>
+    <string name="price">Price</string>
+    <string name="details">Details</string>
+    <string name="photo">Photo</string>
+    <string name="add_pramotion">Add Pramotion</string>
+    <string name="pick_a_photo">Pick a photo</string>
+
+    <array name="cards">
+        <item>MasterCard</item>
+        <item>American Express</item>
+        <item>Visa</item>
+        <item>Chase</item>
+        <item>HSBC Gold</item>
+    </array>
+</resources>
