@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.mad_kavindu.CustomerActivity;
 import com.example.mad_kavindu.R;
 import com.example.mad_kavindu.SharedPref;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeScreen extends AppCompatActivity {
-    Button btn1;
+    Button btn1,btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +28,19 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
+        btn2 = findViewById(R.id.cust_home);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), CustomerActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     public void cutomerClick(View v) {
-        Intent i=new Intent(this, Customer_PramotionList.class);
+        Intent i=new Intent(this, CustomerActivity.class);
 
         startActivity(i);
     }

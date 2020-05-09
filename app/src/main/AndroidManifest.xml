@@ -29,11 +29,6 @@
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.CardActivity" />
 
-        <provider
-            android:name=".data.FoodProvider"
-            android:authorities="com.example.mad_kavindu"
-            android:exported="false" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
